@@ -1,8 +1,6 @@
 import { defineConfig } from 'astro/config';
-import react from '@astrojs/react';
-import tailwind from '@astrojs/tailwind';
 
 export default defineConfig({
-  integrations: [react(), tailwind()],
-  // si vas a publicar en GitHub Pages, ver nota más abajo sobre `base`
+  site: 'https://robolfba.github.io/abocados-website/',
+  output: 'static',
 });
